@@ -18,8 +18,10 @@
 #include <QStackedWidget>
 #include <QSplitter>
 #include <QTextEdit>
+#include <QProcess>
 
 #include "button.h"
+#include "textedit.h"
 
 class MainWindow : public QMainWindow
 {
@@ -31,6 +33,7 @@ public:
 private:
     void initUI();
     void changeStackedWidget();
+    bool isOnline();
 
 private:
     QHBoxLayout *pHBoxLayout;
@@ -47,6 +50,7 @@ private:
 
     /* 类指针 */
     Button *pButton;
+    TextEdit *pTextEdit;
 
     QMap<QString, QWidget *> itemNameWiget;
 

@@ -18,11 +18,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     button.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    textedit.cpp
 
 HEADERS += \
     button.h \
-    mainwindow.h
+    mainwindow.h \
+    textedit.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
