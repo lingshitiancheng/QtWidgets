@@ -73,7 +73,7 @@ void MainWindow::changeStackedWidget()
     });
 }
 
-bool MainWindow::isOnline() //犹豫网络判断在界面加载之前，后期考虑添加线程解决
+bool MainWindow::isOnline() //由于网络判断在界面加载之前，后期考虑添加线程解决
 {
     /* 判断网络是否连接 */
     QString cmdStr = QString("ping -c 1 translate.google.cn");

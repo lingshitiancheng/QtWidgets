@@ -1,6 +1,10 @@
+#include <QApplication>
+#include <stdio.h>
+#include <stdlib.h>
+
 #include "mainwindow.h"
 
-#include <QApplication>
+void myMessageOutput(QtMsgType type, const QMessageLogContext &context, const QString &msg);
 
 int main(int argc, char *argv[])
 {
@@ -10,3 +14,5 @@ int main(int argc, char *argv[])
     w.show();
     return a.exec();
 }
+
+

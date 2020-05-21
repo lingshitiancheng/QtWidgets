@@ -19,11 +19,13 @@ SOURCES += \
     button.cpp \
     main.cpp \
     mainwindow.cpp \
+    mytextedit.cpp \
     textedit.cpp
 
 HEADERS += \
     button.h \
     mainwindow.h \
+    mytextedit.h \
     textedit.h
 
 # Default rules for deployment.
